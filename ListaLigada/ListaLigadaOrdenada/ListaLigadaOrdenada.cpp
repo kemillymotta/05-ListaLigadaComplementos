@@ -137,6 +137,11 @@ void inserirElemento()
 
 void excluirElemento()
 {
+    if (primeiro == NULL) {
+        cout << "Lista vazia \n";
+        return;
+    }
+
     int numero;
     cout << "Digite o elemento: ";
     cin >> numero;
